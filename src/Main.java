@@ -45,5 +45,66 @@ public class Main {
         System.out.println("За сутки машина произвела " + productivityOneDay + " шт. бутылок");
         System.out.println("За 3 дня машина произвела " + productivity3Days + " шт. бутылок");
         System.out.println("За месяц машина произвела " + productivityOneMonth + " шт. бутылок");
+
+        // Task_5
+        byte totalJars = 120;
+        byte whitePaintPerClassroom = 2;
+        byte brownPaintPerClassroom = 4;
+        int totalJarsPerClassroom = whitePaintPerClassroom + brownPaintPerClassroom;
+        int totalClassrooms = totalJars / totalJarsPerClassroom;
+        int whitePaint = totalClassrooms * whitePaintPerClassroom;
+        int brownPaint = totalClassrooms * brownPaintPerClassroom;
+        System.out.println("В школе, где " + totalClassrooms + " классов, нужно " + whitePaint + " банок белой краски и " + brownPaint + " банок коричневой краски");
+
+        // Task_6
+        int banana = 80;
+        int bananasForBreakfast = 5;
+        int milk = 105;
+        int milkForBreakfast = 2;
+        int iceCream = 100;
+        int iceCreamForBreakfast = 2;
+        int eggs = 70;
+        int eggsForBreakfast = 4;
+        int totalBananas = banana * bananasForBreakfast;
+        int totalMilk = milk * milkForBreakfast;
+        int totalIceCream = iceCream * iceCreamForBreakfast;
+        int totalEggs = eggs * eggsForBreakfast;
+        int weightGr = totalBananas + totalMilk + totalIceCream + totalEggs;
+        float weightKg = weightGr / 1000f;
+        System.out.println(weightGr);
+        System.out.println(weightKg);
+
+        // Task_7
+        int totalWeightLoss = 7000;
+        int days250 = totalWeightLoss / 250;
+        int days500 = totalWeightLoss / 500;
+        int average = (days250 + days500) / 2;
+        System.out.println(days250);
+        System.out.println(days500);
+        System.out.println(average);
+
+        // Task_8
+        int masha = 67760;
+        int kristina = 76230;
+        int denis = 83690;
+        float percent = 0.1f;
+        float mashaSalaryIncrease = masha * percent;
+        float kristinaSalaryIncrease = kristina * percent;
+        float denisSalaryIncrease = denis * percent;
+        float masha10 = masha + mashaSalaryIncrease;
+        float kristina10 = kristina + kristinaSalaryIncrease;
+        float denis10 = denis + denisSalaryIncrease;
+        int mashaPerYear = masha * 12;
+        int kristinaPerYear = kristina * 12;
+        int denisPerYear = denis * 12;
+        float mashaPerYear10 = masha10 * 12;
+        float kristinaPerYear10 = kristina10 * 12;
+        float denisPerYear10 = denis10 * 12;
+        float mashaDifference = mashaPerYear10 - mashaPerYear;
+        float kristinaDifference = kristinaPerYear10 - kristinaPerYear;
+        float denisDifference = denisPerYear10 - denisPerYear;
+        System.out.println("Маша теперь получает " + masha10 + " рублей. Её годовой доход вырос на " + mashaDifference + " рублей");
+        System.out.println("Кристина теперь получает " + kristina10 + " рублей. Её годовой доход вырос на " + kristinaDifference + " рублей");
+        System.out.println("Денис теперь получает " + denis10 + " рублей. Его годовой доход вырос на " + denisDifference + " рублей");
     }
 }
